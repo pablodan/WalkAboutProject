@@ -9,12 +9,14 @@ namespace WalkAboutWeb.Models
 {
     public class WalkAboutDb : DbContext
     {
+       
         public DbSet<Category> Categories { get; set; }
         public DbSet<Checkin> Checkins { get; set; }
         public DbSet<Discovery> Discoveries { get; set; }
         public DbSet<Place> Places { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Comment> Comments { get; set; }
+        public DbSet<Route> Routes { get; set; }
 
         //public WalkAboutDb(string connectionString)
         //    : base("WalkAboutDb")

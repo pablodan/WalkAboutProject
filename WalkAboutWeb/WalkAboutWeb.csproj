@@ -147,6 +147,8 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Checkin.cs" />
     <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\Route.cs" />
+    <Compile Include="Models\UserRoute.cs" />
     <Compile Include="Models\WalkAboutDb.cs" />
     <Compile Include="Models\Discovery.cs" />
     <Compile Include="Models\Place.cs" />

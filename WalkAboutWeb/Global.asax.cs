@@ -63,13 +63,12 @@ namespace WalkAboutWeb
             //My suggestion is that you use this initially to generate the database, simple change the connection 
             //string in web config and it will generat the dbase on first run.
             //since we may change the schema, this can be later removed and we manually add the changes to the dbase in management studio.
-            
-            Database.SetInitializer<WalkAboutDb>  
 
-            (new DropCreateDatabaseAlways<WalkAboutDb>());
+            //Database.SetInitializer<WalkAboutDb>
+            //(new DropCreateDatabaseAlways<WalkAboutDb>());
 
            //another way to do it
-          // Database.SetInitializer<WalkAboutDb>(new DropCreateDatabaseIfModelChanges<WalkAboutDb>());
+            Database.SetInitializer<WalkAboutDb>(new DropCreateDatabaseIfModelChanges<WalkAboutDb>());
 
             //another way to do it
            //Database.SetInitializer<WalkAboutDb>(null);
