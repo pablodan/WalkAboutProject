@@ -13,13 +13,12 @@ namespace WalkAboutWeb.Models
         public int PlcId { get; set; }
 
         [Required]
-        public decimal Lattitude { get; set; }
+        public float Lattitude { get; set; }
 
         [Required]
-        public decimal Longitude { get; set; }
+        public float Longitude { get; set; }
 
         public DateTime DateJoined { get; set; }
-
 
         [StringLength(60)]
         public string Name { get; set; }

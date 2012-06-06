@@ -17,9 +17,9 @@ namespace WalkAboutWeb.Models
         [StringLength(200)]
         public string CommentMsg { get; set; }
 
-        public byte[] CommentImg { get; set; }
+        //public byte[] CommentImg { get; set; }
 
-        public string CommImgName { get; set;}
+        public string CommImgLocation { get; set; }
 
         public virtual User User { get; set; }
 
